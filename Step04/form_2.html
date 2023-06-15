@@ -31,6 +31,26 @@
      슬라이더 : <input type="range" name="range" value="100"><br>
      수량 : <input type="number" value="1" max="30" min="0" step="3"><br>
     <br>
+    <!-- 
+      input 태그의 텍스트 상자에서 쓰던 속성을 전부 사용이 가능
+      cols : 컬럼 개수, rows : 행 개수 
+      입력창 크기 조정, 하지만 요즘은 CSS width height로 조정
+    -->
+    <textarea name="" id="" cols="30" rows="10" placeholder="댓글은 1000자까지 가능합니다.">미리 넣을 내용  </textarea>
+    <br>
+    <!-- 
+      value는 실제 서버로 전송될 데이터
+      option 태그에 텍스트가 화면에 보여지는 내용
+      option 태그의 value속성을 생략하면 option 태그의 내용이 value 값로 전송
+     -->
+    <select name="tel">
+      <option value="1">010</option>
+      <option value="2">011</option>
+      <option>016</option>
+      <option value="4">017</option>
+      <option value="5">019</option>
+    </select>
+    <br>
     <button>전송</button>
   </form>
 </body>
