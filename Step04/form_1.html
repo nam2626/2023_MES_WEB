@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼 태그</title>
+</head>
+<body>
+  <!--
+      폼 태그 : 사용자가 입력한 데이터들을 서버로 전송해주는 태그
+        action : 데이터를 전송할 서버페이지 경로
+        method : 데이터 전송 방식을 설정
+            get : url에 데이터를 전송
+            post : http 메세지의 body에 포함해서 데이터를 전송
+      input 태그 : 사용자로부터 데이터를 직접적으로 입력받는 태그
+                  입력받는 종류를 type 속성으로 결정
+    -->
+    <form action="" method="get">
+      <!-- 
+        placeholder : 입력할 내용의 힌트, 입력하면 힌트는 사라짐
+        required : 반드시 입력해야 하는 필수 입력 항목
+        maxlength : 입력할 수 있는 최대 글자 수
+        minlength : 입력할 수 있는 최소 글자 수
+        value : input 태그에 미리 입력할 값, 기본값
+        autofocus : 페이지가 로딩되면 자동으로 포커스가 이동
+        readonly : 해당 input 태그를 읽기 전용으로 설정, 서버로 전송 O
+        disabled : 해당 input 태그를 비활성화, 서버로 전송 X
+      -->
+      <input type="text" name="id" placeholder="아이디 입력" required maxlength="20" minlength="5" autofocus>
+      <br>
+      <input type="password" name="passwd" placeholder="암호 입력">
+      <br>
+      <input type="text" name="name" value="홍길동" disabled>
+      <br>
+      <button type="submit">로그인</button>
+      <input type="reset" value="초기화">
+      <!-- 
+        버튼 종류
+          submit : 폼 태그의 내용을 서버로 전송
+          reset : 폼 태그의 내용을 초기화
+          button : 아무 기능 없음(자바스크립트로 기능 추가 가능)
+      -->
+    </form>
+</body>
+</html>
