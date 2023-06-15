@@ -10,6 +10,8 @@
     <!-- 
       체크박스, 라디오 버튼
         checked 속성 : 체크박스, 라디오 버튼을 미리 체크
+        그룹화 : name 속성 값이 다르면 다른 종류의 값으로 인식
+                라디오 버튼 경우 예 아니오를 둘다 선택된 상태
      -->
     <input type="checkbox" id="game" name="hobby" value="game" checked> 
     <label for="game">게임</label>
@@ -17,7 +19,12 @@
     <input type="checkbox" id="movie" name="hobby" value="movie"> 
     <label for="movie">영화</label>
     <br>
-    
+    가입 약관 동의 여부 :
+    <input type="radio" value="yes" name="agree" id="a1">
+    <label for="a1">예</label>
+    <input type="radio" value="no" name="agree" id="a2" checked>
+    <label for="a2">아니오</label>
+    <br>
     <button>전송</button>
   </form>
 </body>
