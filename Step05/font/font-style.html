@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글꼴 스타일</title>
+    <style>
+         /* 
+            색상
+            rgb(0~255,0~255,0~255)
+                            R G B --> 2자리씩 16진수로 차지함 
+            html색상표 --> #FF00AA
+        */
+        .color{
+            color: red;
+        }
+        /* 
+
+            text-decoration : 선위치 선종류 선색깔
+            선 위치 : underline(밑줄), overline(윗줄), line-through(취소선), none;
+            선 종류 : solid(실선), dotted(점선), dashed(대시선), double(이중선), wavy(물결선);
+        */
+        a{
+            text-decoration:overline wavy red;
+        }
+        /* 글꼴을 두껍게 */
+        .bold{
+            font-weight: bold;
+        }
+        /* 기울임꼴 */
+        .italic{
+            font-style: italic;
+        }
+        /* 폰트 변경 */
+        .font{
+            font-family: '궁서1','바탕';
+        }
+        /* 폰트 파일 읽어오는 부분 */
+        @font-face {
+            font-family: 'MoiraiOne';
+            src: url('resource/MoiraiOne-Regular.ttf');
+        }
+        .new_font{
+            font-family: 'MoiraiOne';
+        }
+    </style>
+</head>
+<body>
+    <a href="#">하이퍼링크</a>
+    <p class="line">근로자는 근로조건의 향상을 위하여 자주적인 단결권·단체교섭권 및 단체행동권을 가진다.</p>
+    <p class="bold">모든 국민은 <span class="italic">법률</span>이 정하는 바에 의하여 국방의 의무를 진다.</p>
+    <p class="font">대법원은 법률에 저촉되지 아니하는 범위안에서 소송에 관한 절차, 법원의 내부규율과 사무처리에 관한 규칙을 제정할 수 있다.</p>
+    <p class="new_font">대한민국은 민주공화국이다. 대통령은 필요하다고 인정할 때에는 외교·국방·통일 기타 국가안위에 관한 중요정책을 국민투표에 붙일 수 있다.</p>
+    <p>공무원의 직무상 불법행위로 손해를 받은 국민은 법률이 정하는 바에 의하여 국가 또는 공공단체에 정당한 배상을 청구할 수 있다. 이 경우 공무원 자신의 책임은 면제되지 아니한다.</p>
+</body>
+</html>
