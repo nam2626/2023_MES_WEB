@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas:
+                "header header header header header header header"
+                "nav nav nav nav nav nav nav"
+                "section section section section section section aside"
+                "footer footer footer footer footer footer footer";
+        }
+
+        h1,
+        h2,
+        h3 {
+            padding: 20px;
+        }
+
+        header {
+            grid-area: header;
+            border: 1px solid black;
+        }
+
+        nav {
+            grid-area: nav;
+            border: 1px solid black;
+        }
+
+        ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        li {
+            display: inline-block;
+            width: 200px;
+            padding: 15px 0px;
+            text-align: center;
+        }
+        section{
+            grid-area: section;
+            border: 1px solid black;
+        }
+        .section_grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        article{
+            border: 1px solid black;
+            box-sizing: border-box;
+            height: 200px;
+        }
+        aside{
+            grid-area: aside;
+            border: 1px solid black;
+        }
+        footer{
+            grid-area: footer;
+            border: 1px solid black;
+            display: grid;
+            grid-template-areas: 
+            "logo . . . . company company";
+            padding: 20px 0px;
+        }
+        .logo{
+            border: 1px solid black;
+            grid-area: logo;
+            height: 100px;
+        }
+        .company{
+            border: 1px solid black;
+            grid-area: company;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>헤더영역</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+                <li><a href="#">메뉴4</a></li>
+                <li><a href="#">메뉴5</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <h2>섹션 제목 영역</h2>
+            <div class="section_grid">
+                <article>
+                    <h3>article 제목</h3>
+                    <p>내용</p>
+                </article>
+                <article>
+                    <h3>article 제목</h3>
+                    <p>내용</p>
+                </article>
+                <article>
+                    <h3>article 제목</h3>
+                    <p>내용</p>
+                </article>
+                <article>
+                    <h3>article 제목</h3>
+                    <p>내용</p>
+                </article>
+                <article>
+                    <h3>article 제목</h3>
+                    <p>내용</p>
+                </article>
+                <article>
+                    <h3>article 제목</h3>
+                    <p>내용</p>
+                </article>
+            </div>
+        </section>
+        <aside>
+            <h2>aside 제목</h2>
+        </aside>
+        <footer>
+            <div class="logo"></div>
+            <div class="company"></div>
+        </footer>
+    </div>
+</body>
+
+</html>
