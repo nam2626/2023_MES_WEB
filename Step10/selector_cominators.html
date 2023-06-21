@@ -30,6 +30,22 @@
         .container li{
             color: blueviolet;
         }
+        /* 
+            동생 요소 선택자
+            선택자+선택자{
+                속성:값;
+            }
+            자기 아래 동생들 전부 선택
+            선택자~선택자{
+                속성:값;
+            }
+        */
+        .brother1+li{
+            text-decoration: underline;
+        }
+        .brother2~li{
+            color: red;
+        }
     </style>
 </head>
 <body>
