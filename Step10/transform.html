@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border:1px solid black;
+            background-image: url('img/back.jpg');
+            background-size: 100% 100%;
+            margin-top: 30px;
+        }
+        div.t1{
+            transform: translate(100px, 100px);
+        }
+        div.t2{
+            transform: translate(200px, 0px) rotateX(91deg);
+        }
+        div.t3{
+            transform: translate(200px, 0px) rotateY(45deg);
+        }
+        div.t4{
+            transform: translate(200px, 0px) rotateZ(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="t1"></div>    
+    <div class="t2"></div>    
+    <div class="t3"></div>    
+    <div class="t4"></div>    
+</body>
+</html>
