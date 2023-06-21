@@ -46,6 +46,72 @@
         .brother2~li{
             color: red;
         }
+        /* 가상클래스 */
+        /* 
+            선택자:가상클래스{
+                속성:값;
+            }
+        */
+        /* 하이퍼링크가 걸려 있을때 */
+        a:link{
+            text-decoration: none;
+            color: crimson;
+        }
+        /* 방문한 적이 있는 페이지 링크 */
+        a:visited{
+            text-decoration: line-through;
+            color: darkcyan;
+        }
+        /* 마우스를 올렸을때 */
+        a:hover{
+            text-decoration: underline;
+            font-weight: bold;
+            color: darkgoldenrod;
+        }
+        /* 마우스를 클릭했을때 */
+        a:active{
+            background-color: burlywood;
+        }
+        /* 해당 태그가 선택이 되었을때 */
+        input:focus{
+            background-color: darkcyan;
+            outline: none;
+        }
+        /* disabled : 비활성화 된 상태 */
+        input:disabled{
+            background-color: red !important;
+        }
+        input:read-only{
+            border:2px solid blue;
+            background-color: burlywood;
+        }
+        input:required{
+            border: 2px solid brown;
+        }
+        /* 체크박스(라디오버튼)가 체크된 상태 */
+        #chk:checked+label{
+            background-color: darkcyan;
+        }
+        /* 첫번째 요소만 선택 */
+        .container1 > p:first-child{
+            color: red;
+        }
+        /* 마지막 요소만 선택 */
+        .container1 > p:last-child{
+            color:blueviolet;
+        }
+        /* 원하는 n번째 요소 */
+        .container1 > p:nth-child(3){
+            text-decoration: line-through dashed;
+        }
+        /* 짝수번째 요소 */
+        .container1 > p:nth-child(2n){
+            background-color: gold;
+        }
+        /* 홀수번째 요소 */
+        .container1 > p:nth-child(2n+1){
+            background-color: yellowgreen;
+        }
     </style>
 </head>
 <body>
