@@ -24,15 +24,55 @@
         nav{
             border: 1px solid black;
         }
+        ul{
+            list-style-type: none;
+            flex-direction: row;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px 0px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .main_container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
         section{
+            width: 900px;
+            display: flex;
+            flex-flow: row wrap;
             border: 1px solid black;
         }
+        section > h2{
+            width: 100%;
+            padding: 20px 0px;
+        }
+        article{
+            border:1px solid black;
+            width: calc(100% / 3);
+            height: 300px;
+            box-sizing: border-box;
+        }
         aside{
+            width: 300px;
             border: 1px solid black;
         }
         footer{
             border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            padding:20px 0px;
+            justify-content:space-between ;
         }
+        .logo, .company{
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
     </style>
 </head>
 <body>
