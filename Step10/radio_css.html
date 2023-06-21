@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커스텀 라디오 버튼</title>
+    <style>
+        input{
+            display: none;
+        }
+        label{
+            background-image: url('img/radio_none_check.png');
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 16px;
+            padding-left: 20px;
+        }
+        input:checked + label{
+            background-image: url('img/radio_check.png');
+        }
+    </style>
+</head>
+<body>
+    <input type="radio" name="item" id="item1">
+    <label for="item1">항목1</label>
+    <br>
+    <input type="radio" name="item" id="item2">
+    <label for="item2">항목2</label>
+</body>
+</html>
